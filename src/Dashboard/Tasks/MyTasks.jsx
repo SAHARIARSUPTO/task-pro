@@ -62,7 +62,7 @@ const MyTasks = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch('https://taskpro-server-sahariarsupto.vercel.app/tasks');
+      const response = await fetch('https://task-pro-server.vercel.app/tasks');
       const data = await response.json();
       setTasks(data);
       setLoading(false);
@@ -74,7 +74,7 @@ const MyTasks = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch('https://taskpro-server-sahariarsupto.vercel.app/users');
+      const response = await fetch('https://task-pro-server.vercel.app/users');
       const data = await response.json();
       setUsers(data);
     } catch (error) {
@@ -91,7 +91,7 @@ const MyTasks = () => {
 
   const deleteTask = async (taskId) => {
     try {
-      const response = await fetch(`https://taskpro-server-sahariarsupto.vercel.app/tasks/${taskId}`, {
+      const response = await fetch(`https://task-pro-server.vercel.app/tasks/${taskId}`, {
         method: 'DELETE',
       });
       if (response.ok) {

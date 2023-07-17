@@ -84,12 +84,6 @@ const SideBar = () => {
                   </Link>
                 </div>
                 <div className='mb-4'>
-                  <Link to='plot'>
-                    <FontAwesomeIcon className='me-1' icon={faCalendarMinus} />
-                    Summary
-                  </Link>
-                </div>
-                <div className='mb-4'>
                   <Link to='message'>
                     <FontAwesomeIcon className='me-1' icon={faMessage} />
                     Messages
@@ -136,12 +130,6 @@ const SideBar = () => {
                 <Link to='addtask'>
                   <FontAwesomeIcon className='me-1' icon={faAdd} />
                   Add Tasks
-                </Link>
-              </div>
-              <div className='mb-4'>
-                <Link to='plot'>
-                  <FontAwesomeIcon className='me-1' icon={faCalendarMinus} />
-                  Summary
                 </Link>
               </div>
               <div className='mb-4'>

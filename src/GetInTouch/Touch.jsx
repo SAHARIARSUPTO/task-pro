@@ -30,7 +30,7 @@ const Touch = () => {
     };
 
     // Perform a POST fetch request to send the message
-    fetch("http://localhost:3000/messages", {
+    fetch("https://task-pro-server.vercel.app/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

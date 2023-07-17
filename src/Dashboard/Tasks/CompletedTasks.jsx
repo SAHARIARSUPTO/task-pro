@@ -9,7 +9,7 @@ const CompletedTasks = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch("https://taskpro-server-sahariarsupto.vercel.app/tasks");
+      const response = await fetch("https://task-pro-server.vercel.app/tasks");
       const data = await response.json();
       setTasks(data);
     } catch (error) {

@@ -10,7 +10,7 @@ const Login = () => {
   const { signInUser, setUser,user } = useContext(AuthContext);
 
 const location = useLocation()
-const from = location.state?.from?.pathname || '/dashboard'
+const from = location.state?.from?.pathname || '/'
 
   const handleSignIn = (event) => {
     event.preventDefault();

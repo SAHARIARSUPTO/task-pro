@@ -30,7 +30,7 @@ const Messages = () => {
 
   const fetchMessages = async () => {
     try {
-      const response = await fetch('https://taskpro-server-sahariarsupto.vercel.app/messages');
+      const response = await fetch('https://task-pro-server.vercel.app/messages');
       const data = await response.json();
       setMessages(data);
       setLoading(false);
@@ -42,7 +42,7 @@ const Messages = () => {
 
   const deleteMessage = async (messageId) => {
     try {
-      const response = await fetch(`https://taskpro-server-sahariarsupto.vercel.app/messages/${messageId}`, {
+      const response = await fetch(`https://task-pro-server.vercel.app/messages/${messageId}`, {
         method: 'DELETE',
       });
       if (response.ok) {

@@ -11,7 +11,7 @@ const AllUsers = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch('https://taskpro-server-sahariarsupto.vercel.app/users');
+      const response = await fetch('https://task-pro-server.vercel.app/users');
       const data = await response.json();
       setUsers(data);
       setLoading(false);
@@ -23,7 +23,7 @@ const AllUsers = () => {
 
   const deleteUser = async (userId) => {
     try {
-      const response = await fetch(`https://taskpro-server-sahariarsupto.vercel.app/users/${userId}`, {
+      const response = await fetch(`https://task-pro-server.vercel.app/users/${userId}`, {
         method: 'DELETE',
       });
       if (response.ok) {
